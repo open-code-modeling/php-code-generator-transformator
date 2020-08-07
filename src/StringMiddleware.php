@@ -12,7 +12,7 @@ namespace OpenCodeModeling\CodeGenerator\Transformator;
 
 use OpenCodeModeling\CodeGenerator\Workflow;
 
-class StringMiddleware
+final class StringMiddleware
 {
     /**
      * @var callable

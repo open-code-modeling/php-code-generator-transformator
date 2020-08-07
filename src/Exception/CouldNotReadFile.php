@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace OpenCodeModeling\CodeGenerator\Transformator\Exception;
 
-class CouldNotReadFile extends RuntimeException
+final class CouldNotReadFile extends RuntimeException
 {
     public static function withFile(string $file): self
     {

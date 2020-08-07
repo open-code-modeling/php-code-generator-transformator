@@ -13,7 +13,7 @@ namespace OpenCodeModeling\CodeGenerator\Transformator;
 use OpenCodeModeling\CodeGenerator\Transformator\Exception\RuntimeException;
 use OpenCodeModeling\CodeGenerator\Workflow;
 
-class CodeListMiddleware
+final class CodeListMiddleware
 {
     /**
      * @var callable

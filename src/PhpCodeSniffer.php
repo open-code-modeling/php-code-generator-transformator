@@ -25,7 +25,7 @@ use PHP_CodeSniffer\Util\Tokens;
  *
  * include 'vendor/squizlabs/php_codesniffer/autoload.php';
  */
-class PhpCodeSniffer
+final class PhpCodeSniffer
 {
     /**
      * @var Config

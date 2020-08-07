@@ -14,7 +14,7 @@ use OpenCodeModeling\CodeGenerator\Transformator\Exception\RuntimeException;
 use OpenCodeModeling\CodeGenerator\Workflow;
 use OpenCodeModeling\CodeGenerator\Workflow\ComponentDescriptionWithInputSlotOnly;
 
-class CodeListToFiles
+final class CodeListToFiles
 {
     /**
      * @var StringToFile

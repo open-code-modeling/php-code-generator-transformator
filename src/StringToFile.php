@@ -14,7 +14,7 @@ use OpenCodeModeling\CodeGenerator\Transformator\Exception\RuntimeException;
 use OpenCodeModeling\CodeGenerator\Workflow;
 use OpenCodeModeling\CodeGenerator\Workflow\ComponentDescriptionWithInputSlotOnly;
 
-class StringToFile
+final class StringToFile
 {
     public function __invoke(string $data, string $filename): void
     {
