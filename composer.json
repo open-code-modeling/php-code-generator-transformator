@@ -1,0 +1,71 @@
+{
+    "name": "open-code-modeling/php-code-generator-transformator",
+    "description": "Open Code Modeling PHP Code Generator Transformator",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sandro Keil",
+            "homepage": "https://sandro-keil.de",
+            "role": "maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/open-code-modeling/php-code-generator-transformator/issues",
+        "source": "https://github.com/open-code-modeling/php-code-generator-transformator"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenCodeModeling\\CodeGenerator\\Transformator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OpenCodeModelingTest\\CodeGenerator\\Transformator\\": "tests/"
+        }
+    },
+    "require": {
+        "ext-dom": "*"
+    },
+    "require-dev": {
+        "open-code-modeling/php-code-generator": "*",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpstan/phpstan": "^0.12.33",
+        "phpstan/phpstan-strict-rules": "^0.12.4",
+        "phpunit/phpunit": "^9.2.6",
+        "prooph/php-cs-fixer-config": "^0.3",
+        "roave/security-advisories": "dev-master",
+        "squizlabs/php_codesniffer": "^3.4"
+    },
+    "suggest": {
+        "open-code-modeling/php-code-generator": "To use the static factory methods for Code Generator workflow configuration"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "check": [
+            "@cs",
+            "@docheader",
+            "@test"
+        ],
+        "docheader": "vendor/bin/docheader check src/ tests/",
+        "cs": "php-cs-fixer fix src -v --diff --dry-run",
+        "cs-fix": "php-cs-fixer fix src -v --diff",
+        "test": "vendor/bin/phpunit",
+        "analyse": "php vendor/bin/phpstan.phar analyse --no-interaction"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+        }
+    },
+    "archive": {
+        "exclude": [
+            ".coveralls.yml",
+            ".travis.yml",
+            "build",
+            "phpunit.xml*",
+            "tests"
+        ]
+    }
+}
